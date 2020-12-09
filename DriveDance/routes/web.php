@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PricingController;
+use App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () { return view('home');})->name('home');
-Route::get('/news', function () { return view('news');})->name('news');
-Route::get('/pricing', function () { return view('pricing');})->name('pricing');
+Route::get('/news', [NewsController::class, 'index'])->name('news');
+Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');

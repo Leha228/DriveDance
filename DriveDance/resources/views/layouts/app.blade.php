@@ -11,7 +11,7 @@
 <body>
     
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
-        <div style="width: 70%; margin:auto; display:flex; justify-content:space-around">
+        <div style="width: 85%; margin:auto; display:flex; justify-content:space-around">
             <ul class="navbar-nav mr-auto" >
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ route('home') }}">DriveDance<span class="sr-only">(current)</span></a>
@@ -39,8 +39,8 @@
                 </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
             </form>
             </div>
         </div>
@@ -49,7 +49,7 @@
     <main role="main">
         @yield('content')
         <footer class="container mt-5 mb-5">
-            <p class="float-right"><a href="#">Back to top</a></p>
+            <p class="float-right"><a href="#">Наверх</a></p>
             <p>© 2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
         </footer>
     </main>
