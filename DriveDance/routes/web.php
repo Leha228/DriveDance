@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PricingController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,11 @@ use App\Http\Controllers\NewsController;
 |
 */
 
+
 Route::get('/', function () { return view('home');})->name('home');
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
+Route::get('/drivedance/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/drivedance/admin/logout', [AdminController::class, 'logout'])->name('logout');
+
+Route::post('/drivedance/admin/signin', [AdminController::class, 'signin'])->name('admin_signin');
