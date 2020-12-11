@@ -83,7 +83,7 @@
                                     <td>{{ $post->description }}</td>
                                     <td>В разработке</td>
                                     <td>
-                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdate">Редактировать</button>
+                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdate{{$post->id}}">Редактировать</button>
                                       @include('layouts.modalUpdate')
                                     </td>
                                     <td>
