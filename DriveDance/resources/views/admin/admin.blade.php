@@ -45,8 +45,22 @@
                 </div>
             </nav>
 
-            <div style="flex: 1;">
-                <h2>Список новостей</h2>
+            <div class="mt-3" style="flex: 1;">
+                <div class="row">
+                  <div class="col-sm"> 
+                    <h2>Список новостей</h2>
+                  </div>
+                  <div class="col-sm">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">+</button>
+                  </div>
+                </div>
+
+                @if (Session::has('info'))
+                  <div class="alert alert-success" role="alert">
+                      {{ Session::get('info') }}
+                  </div>
+                @endif
+
                 @if($posts ?? False)
                     <table class="table table-striped table-sm">
                         <thead>
@@ -56,6 +70,8 @@
                             <th>Дата</th>
                             <th>Описание</th>
                             <th>Картинка</th>
+                            <th></th>
+                            <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -66,6 +82,17 @@
                                     <td>{{ $post->date }}</td>
                                     <td>{{ $post->description }}</td>
                                     <td>В разработке</td>
+                                    <td>
+                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdate">Редактировать</button>
+                                      @include('layouts.modalUpdate')
+                                    </td>
+                                    <td>
+                                        <form action="{{ route('admin_delete_news') }}" method="post">
+                                          @csrf
+                                          <input type="hidden" name="delete_id" value="{{ $post->id }}">
+                                          <button type="submit" class="btn btn-danger">-</button>
+                                        </form>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -76,6 +103,10 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    @include('layouts.modalCreate')
+   
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -92,6 +123,7 @@
     </script>
 
     <!-- Graphs -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script>
       var ctx = document.getElementById("myChart");
