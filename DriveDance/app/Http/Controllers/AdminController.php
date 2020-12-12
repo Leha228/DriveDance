@@ -17,6 +17,13 @@ class AdminController extends Controller
         return view('admin.admin', ['posts' => $posts]);
     }
 
+    public function indexPay() {
+        $pays = DB::table('pay')->get()->reverse();
+        if (count($pays) == 0) 
+            return view('admin.adminPay');
+        return view('admin.adminPay', ['pays' => $pays]);
+    }
+
     public function signin(Request $request) {
         if(!Auth::attempt($request->only('email', 'password'))) {
             return redirect()->back()->with('Info','Неправильный логин или пароль!');

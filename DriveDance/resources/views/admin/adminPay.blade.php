@@ -36,57 +36,39 @@
             <div class="mt-3" style="flex: 1;">
                 <div class="row">
                   <div class="col-sm"> 
-                    <h2>Список новостей</h2>
-                  </div>
-                  <div class="col-sm">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">+</button>
+                    <h2>Список заказов</h2>
                   </div>
                 </div>
 
-                @if (Session::has('info'))
-                  <div class="alert alert-success" role="alert">
-                      {{ Session::get('info') }}
-                  </div>
-                @endif
-
-                @if($posts ?? False)
+                @if($pays ?? False)
                     <table class="table table-striped table-sm">
                         <thead>
                             <tr>
                             <th>id</th>
-                            <th>Тема</th>
-                            <th>Дата</th>
-                            <th>Описание</th>
-                            <th>Картинка</th>
-                            <th></th>
-                            <th></th>
+                            <th>order_id</th>
+                            <th>Имя</th>
+                            <th>Фамилия</th>
+                            <th>Емайл</th>
+                            <th>Телефон</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($posts as $post)
+                            @foreach ($pays as $pay)
                                 <tr>
-                                    <td>{{ $post->id }}</td>
-                                    <td>{{ $post->title }}</td>
-                                    <td>{{ $post->date }}</td>
-                                    <td>{{ $post->description }}</td>
-                                    <td>В разработке</td>
+                                    <td>{{ $pay->id }}</td>
+                                    <td>{{ $pay->order_id }}</td>
+                                    <td>{{ $pay->fname }}</td>
+                                    <td>{{ $pay->sname }}</td>
+                                    <td>{{ $pay->email }}</td>
                                     <td>
-                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdate{{$post->id}}">Редактировать</button>
-                                      @include('layouts.modalUpdate')
-                                    </td>
-                                    <td>
-                                        <form action="{{ route('admin_delete_news') }}" method="post">
-                                          @csrf
-                                          <input type="hidden" name="delete_id" value="{{ $post->id }}">
-                                          <button type="submit" class="btn btn-danger">-</button>
-                                        </form>
+                                        {{ $pay->phone }}
                                     </td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
                 @else
-                    <p>Новостей пока нету</p>
+                    <p>Заказов пока нету</p>
                 @endif  
             </div>
         </div>

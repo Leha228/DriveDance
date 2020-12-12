@@ -11,32 +11,32 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item carousel-item-next carousel-item-left">
-      <img class="first-slide" height="480" width="1920" src="https://elitefon.ru/images/201211/elitefon.ru_13994.jpg" alt="First slide">
+      <img class="first-slide" height="600" width="1920" src="{{ asset('img/11.jpg') }}" alt="First slide">
       <div class="container">
         <div class="carousel-caption text-left">
           <h1>У нас самые низкие цены.</h1>
           <p>Школа современных танцев с хореографами из Лондона. Учись у лучших! Новый курс для начинающих с 30 ноября</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Записаться прямо сейчас!</a></p>
+          <p><a class="btn btn-lg btn-primary" href="{{ route('pricing') }}" role="button">Записаться прямо сейчас!</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="second-slide" height="480" width="1920" src="https://elitefon.ru/images/201211/elitefon.ru_13994.jpg" alt="Second slide">
+      <img class="second-slide" height="600" width="1920" src="{{ asset('img/22.jpg') }}" alt="Second slide">
       <div class="container">
         <div class="carousel-caption">
           <h1>У нас самые низкие цены.</h1>
           <p>Школа современных танцев с хореографами из Лондона. Учись у лучших! Новый курс для начинающих с 30 ноября</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Записаться прямо сейчас!</a></p>
+          <p><a class="btn btn-lg btn-primary" href="{{ route('pricing') }}" role="button">Записаться прямо сейчас!</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item active carousel-item-left">
-      <img class="third-slide" height="480" width="1920" src="https://elitefon.ru/images/201211/elitefon.ru_13994.jpg" alt="Third slide">
+      <img class="third-slide" height="600" width="1920" src="{{ asset('img/33.jfif') }}" alt="Third slide">
       <div class="container">
         <div class="carousel-caption text-right">
           <h1>У нас самые низкие цены.</h1>
           <p>Школа современных танцев с хореографами из Лондона. Учись у лучших! Новый курс для начинающих с 30 ноября</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Записаться прямо сейчас!</a></p>
+          <p><a class="btn btn-lg btn-primary" href="{{ route('pricing') }}" role="button">Записаться прямо сейчас!</a></p>
         </div>
       </div>
     </div>
@@ -44,11 +44,11 @@
 
   <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only">Предыдущее</span>
   </a>
   <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">Следущее</span>
   </a>
 </div>
 
@@ -56,22 +56,19 @@
 <div class="container marketing mt-5">
   <div class="row">
     <div class="col-lg-4">
-      <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      <h2 class="mt-2">Heading</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      <img class="rounded-circle" src="{{ asset('img/MickScott.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+      <h2 class="mt-2">Майк Скотт</h2>
+      <p>Начав музыкальную карьеру в 1970-х годах, которая продолжается по сей день, Скотт занимается музыкой профессионально с 1980-х и хорошо известен своими радикальными изменениями в музыкальных жанрах на протяжении того, что он называет своей «якобы неортодоксальной» карьерой.</p>
     </div>
     <div class="col-lg-4">
-      <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      <h2 class="mt-2">Heading</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      <img class="rounded-circle" src="{{ asset('img/IvanIvanov.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+      <h2 class="mt-2">Иван Иванов</h2>
+      <p>С 1999 по 2004 год Иван был директором и куратором Artspeak, одного из многих канадских художественных центров в Ванкувере, Британская Колумбия, а в настоящее время является заместителем директора при Британском университете Колумбия.</p>
     </div>
     <div class="col-lg-4">
-      <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      <h2 class="mt-2">Heading</h2>
-      <p>Donec sed odio dui. Dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      <img class="rounded-circle" src="{{ asset('img/PetrDibrov.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+      <h2 class="mt-2">Петр Дибров</h2>
+      <p>В подростковом возрасте Петр покинул Новую Зеландию и переехал в Лондон, где начал работать в кино и на телевидении. В своей кинематографической карьере Петр работал каскадером, оружейником, пиротехником, редактором, почтмейстером, продюсером и писателем.</p>
     </div>
   </div>
 
@@ -82,11 +79,11 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading">Удобный зал в Drive Dance</h2>
+      <p class="lead">Мы одна из немногих танцевальных школ в Москве, которая занимается обучением не в одном направлении, а сочетает несколько стилей в один импровизированный танец. Мы готовы за один курс сделать вас мастером импровизации, научить развитию танца, круто и современно двигаться (вне зависимости сколько вам лет) и научить вас правильно расслабляться под музыку.</p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_176377c073c%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_176377c073c%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.13333129882812%22%20y%3D%22261.7%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/1.jpg') }}" data-holder-rendered="true">
     </div>
   </div>
 
@@ -94,11 +91,11 @@
 
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading">Что Вас ждет</h2>
+      <p class="lead">Танцевальная школа Drive Dance входит в рейтинг самых популярных студий танца в Москве. Мы сотрудничаем с такими артистами, как Сергей Лазарев, Виктория Дайнеко, Юлия Ковальчук и многими другими. Если вы сомневаетесь в себе или наших возможностях, чтобы убедиться в своем решении мы приглашаем вас по адресу: г. Москва, м. Трубная, Трубная площадь, д.2. Так же вы всегда можете ознакомиться с отзывами о нашей школе, или посетить наш канал на YouTube, где можно просмотреть бесплатные уроки от преподавателей школы Drive Dance. Но ни один видео урок не сможет заменить атмосферы, которая присутствует в зале.</p>
     </div>
     <div class="col-md-5 order-md-1">
-      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_176377c0742%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_176377c0742%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.13333129882812%22%20y%3D%22261.7%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/2.jfif') }}" data-holder-rendered="true">
     </div>
   </div>
 
@@ -106,11 +103,21 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading">Что мы предлагаем</h2>
+      <p class="lead">
+        <ul class="lead">
+          <li>обучение современным стилям танца (хип-хоп, джаз фанк, контемпорари и хаус);</li>
+          <li>занятия в просторном зале (танцевальная студия в 170 м2);</li>
+          <li>удобное время занятий (утром/вечером, 1 — 3 раза в неделю);</li>
+          <li>преподаватели — известные лондонские хореографы, которые сотрудничают со звездами;</li>
+          <li>каждый месяц прилетают профессиональные танцоры из Лондона;</li>
+          <li>через каждые 4 недели меняется преподаватель для внесения «свежего» стиля;</li>
+        </ul>
+        Все занятия рассчитаны на начинающих танцоров.
+      </p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_176377c0747%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_176377c0747%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.13333129882812%22%20y%3D%22261.7%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('img/3.jfif') }}" data-holder-rendered="true">
     </div>
   </div>
   <hr class="featurette-divider">

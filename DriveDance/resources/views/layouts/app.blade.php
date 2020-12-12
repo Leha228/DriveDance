@@ -20,7 +20,7 @@
                     <a class="nav-link" href="{{ route('news') }}">Новости</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Расписание занятий</a>
+                    <a class="nav-link" href="{{ route('timing') }}">Расписание занятий</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('pricing') }}">Цены</a>
@@ -32,10 +32,10 @@
                     <a class="nav-link" href="#">Вакансии</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Отзывы</a>
+                    <a class="nav-link" href="{{ route('feedback') }}">Отзывы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
+                    <a class="nav-link" href="{{ route('contact') }}">Контакты</a>
                 </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">
@@ -50,7 +50,7 @@
         @yield('content')
         <footer class="container mt-5 mb-5">
             <p class="float-right"><a href="#">Наверх</a></p>
-            <p>© 2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+            <p>© 2020 DriveDance, Inc.</p>
         </footer>
     </main>
 
