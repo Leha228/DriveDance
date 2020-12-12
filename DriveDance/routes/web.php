@@ -18,7 +18,17 @@ use App\Http\Controllers\AdminController;
 */
 
 /* Router */
-Route::get('/', function () { return view('home');})->name('home');
+
+Route::get('/', function () { 
+    $count = DB::table('visitor')->where('id','=',1)->value('count');
+
+    DB::table('visitor')->where('id', '=', 1)->update([
+        'count' => $count + 1
+    ]);
+
+    return view('home', ['count' => $count]);
+})->name('home');
+
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
 Route::get('/timing', function () { return view('timing');})->name('timing');

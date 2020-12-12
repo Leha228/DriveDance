@@ -51,6 +51,7 @@
         <footer class="container mt-5 mb-5">
             <p class="float-right"><a href="#">Наверх</a></p>
             <p>© 2020 DriveDance, Inc.</p>
+            <p>Посетило: {{ $count ?? "не робит"}}</p>
         </footer>
     </main>
 
